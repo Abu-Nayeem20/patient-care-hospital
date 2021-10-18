@@ -1,0 +1,18 @@
+.banner-style{
+    height: 90vh;
+}
+.banner-style img{
+   height: 90vh;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    border: 2px solid brown;
+}
