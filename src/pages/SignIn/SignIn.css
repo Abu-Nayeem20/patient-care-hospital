@@ -1,0 +1,16 @@
+
+.google-btn{
+    border: 1px solid brown;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 30px;
+    color: brown;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+.google-btn:hover{
+    background-color: brown;
+    color: #fff;
+}

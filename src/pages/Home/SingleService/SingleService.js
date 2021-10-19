@@ -23,8 +23,13 @@ const SingleService = () => {
             </div>
             <div className='container text-center'>
             <h2 className='py-5 fw-bold'>{singleService?.title}</h2>
-             <img src={singleService?.img} alt="" />
+             <img className='img-fluid' src={singleService?.img} alt="" />
              <p className='text-start py-5'>{singleService?.desc}</p>
+            </div>
+            <div className='service-appoint mb-5 text-center'>
+                <h2 className='fw-bolder fs-1 text-light'>WANT TO SCHEDULE AN APPOINTMENT?</h2>
+                <p>Call us at (+880) 959-595-959 or fill in the appointment form...</p>
+                <button className='btn btn-danger'><i className="fas fa-address-book"></i> Appointmenr Form</button>
             </div>
         </div>
     );

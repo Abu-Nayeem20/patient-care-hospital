@@ -1,0 +1,18 @@
+
+.service-top{
+    background-image: url('https://i.ibb.co/qMGJpr1/banner-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+.service-appoint{
+    background-image: url('https://i.ibb.co/LhzZWk4/hospital-gd75647972-1280.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+.service-appoint h2{
+    padding-top: 150px;
+}
