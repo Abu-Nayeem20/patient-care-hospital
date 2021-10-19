@@ -10,7 +10,7 @@ const FeaturedServices = () => {
         .then(data => setServices(data))
     }, [])
 
-    const slicedService = services.slice(0, 3);
+    // const slicedService = services.slice(0, 3);
 
     return (
         <div>
@@ -20,7 +20,7 @@ const FeaturedServices = () => {
             </div>
             <div className="row row-cols-1 row-cols-md-3 g-4">
             {
-                slicedService.map(service => <FeaturedService 
+                services.map(service => <FeaturedService 
                     key={service.id}
                     service={service}></FeaturedService>)
             }
