@@ -19,11 +19,11 @@ const Contact = () => {
                 <Form>
                 <Form.Group className="mb-3" controlId="">
                     <Form.Label>Your Name</Form.Label>
-                    <Form.Control type="text" placeholder="Enter name" value={user?.displayName} />
+                    <Form.Control type="text" placeholder="Enter name" readOnly value={user?.displayName} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Your Email</Form.Label>
-                    <Form.Control type="email" value={user?.email} placeholder="Enter email" />
+                    <Form.Control type="email" readOnly value={user?.email} placeholder="Enter email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">

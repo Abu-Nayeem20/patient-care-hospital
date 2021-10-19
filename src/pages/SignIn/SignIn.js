@@ -79,10 +79,12 @@ const SignIn = () => {
                 </Form>
                 </div>
                 <div className='col-md-6'>
-                    <img className='img-fluid' src="https://i.ibb.co/mq1Wh2V/Access-control-system-abstract-concept-vector-illustration-Security-system-authorize-entry-login-cre.jpg" alt="" />
+                    <div className='w-50 mx-auto'>
+                    <img className='img-fluid' src="https://i.ibb.co/G0Z7NQW/20944201.jpg" alt="" />
+                    </div>
                 </div>
             </div>
-            <div className='text-center pb-5'>
+            <div className='text-center pb-5 mt-5'>
                 <h4 className='fw-bold pb-3'>Or Sign In Using</h4>
                 <p className='google-btn' onClick={handleGoogleSignIn}><i className="fab fa-google"></i></p>
             </div>
