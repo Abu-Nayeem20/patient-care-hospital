@@ -5,7 +5,12 @@ import './Banner.css'
 const Banner = () => {
     
     return (
-        <div className='pt-3'>
+        <div className='pt-3 banner'>
+            <div className='banner-overley'>
+                <h2>Your doctor your treatment</h2>
+                <p>Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+                <button className='btn btn-danger'>Know More</button>
+            </div>
             <Carousel className='banner-style'>
             <Carousel.Item>
                 <img

@@ -16,3 +16,9 @@
 .service-appoint h2{
     padding-top: 150px;
 }
+
+@media (max-width: 768px) {
+    .service-appoint h2{
+        padding-top: 50px;
+    }
+}

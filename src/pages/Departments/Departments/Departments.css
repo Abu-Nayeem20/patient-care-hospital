@@ -3,3 +3,10 @@
     font-weight: 700;
     font-size: 25px;
 }
+
+.dept-card img{
+    transition: .6s;
+}
+.dept-card:hover img{
+    transform: scale(1.3);
+}

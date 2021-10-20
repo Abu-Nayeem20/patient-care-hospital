@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import FeaturedService from '../../Home/FeaturedService/FeaturedService';
+import Subscribe from '../../Shared/Subscribe/Subscribe';
 import './Services.css'
 
 const Services = () => {
@@ -29,7 +30,9 @@ const Services = () => {
                 <p>Call us at (+880) 959-595-959 or fill in the appointment form...</p>
                 <button className='btn btn-danger'><i className="fas fa-address-book"></i> Appointmenr Form</button>
             </div>
-            
+           <div className='container'>
+           <Subscribe></Subscribe>
+           </div>
         </div>
     );
 };

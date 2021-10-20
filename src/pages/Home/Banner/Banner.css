@@ -4,6 +4,29 @@
 .banner-style img{
    height: 90vh;
 }
+.banner{
+    position: relative;
+}
+.banner-overley{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.541);
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.banner-overley h2{
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 40px;
+   color: rgb(255, 255, 255);
+   padding: 5px;
+}
+.banner-overley p{
+    color: goldenrod;
+}
 .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
@@ -15,4 +38,18 @@
     text-indent: -999px;
     cursor: pointer;
     border: 2px solid brown;
+}
+
+
+@media (max-width: 768px) {
+    .banner-overley{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        z-index: 99;
+    }
+    .banner-overley h2{
+        font-size: 20px;
+     }
 }

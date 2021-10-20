@@ -75,6 +75,14 @@ const useFirebase = () =>{
         haveAccount ? existingUserLogin(email, password) : signUpNewUser(email, password);
         
     }
+    const updateUserInfo = () =>{
+      updateProfile(auth.currentUser, {displayName: name, photoURL: photo})
+      .then( result=>{ })
+      .catch(error =>{
+        setError(error.message)
+      })
+    } 
+
     const signUpNewUser = (email, password) =>{
         createUserWithEmailAndPassword(auth, email, password)
           .then( result =>{
@@ -82,6 +90,7 @@ const useFirebase = () =>{
             setError('');
             console.log(user);
             updateUserInfo();
+            setUser(user);
           })
           .catch((error) => {
             setError(error.message);
@@ -96,11 +105,7 @@ const useFirebase = () =>{
           .catch(error =>{
             setError(error.message);
           });
-      }
-      const updateUserInfo = () =>{
-        updateProfile(auth.currentUser, {displayName: name, photoURL: photo})
-        .then( result=>{ })
-      }  
+      } 
 
     useEffect( () =>{
         const unsubscribed = onAuthStateChanged(auth, user =>{

@@ -1,0 +1,12 @@
+
+.whywe-item{
+    background-color: #30336b;
+}
+.whywe-item i{
+   transition: .6s;
+   color: #fff;
+   font-size: 50px;
+}
+.whywe-item:hover i{
+    transform: scale(1.5);
+}

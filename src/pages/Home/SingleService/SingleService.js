@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import Subscribe from '../../Shared/Subscribe/Subscribe';
 import './SingleService.css'
 
 const SingleService = () => {
@@ -30,6 +31,9 @@ const SingleService = () => {
                 <h2 className='fw-bolder fs-1 text-light'>WANT TO SCHEDULE AN APPOINTMENT?</h2>
                 <p>Call us at (+880) 959-595-959 or fill in the appointment form...</p>
                 <button className='btn btn-danger'><i className="fas fa-address-book"></i> Appointmenr Form</button>
+            </div>
+            <div className='container'>
+                <Subscribe></Subscribe>
             </div>
         </div>
     );

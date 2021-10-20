@@ -1,4 +1,5 @@
 import React from 'react';
+import Subscribe from '../../Shared/Subscribe/Subscribe';
 import Banner from '../Banner/Banner';
 import FeaturedServices from '../FeaturedServices/FeaturedServices';
 import Welcome from '../Welcome/Welcome';
@@ -13,6 +14,7 @@ const Home = () => {
                 <Welcome></Welcome>
                 <FeaturedServices></FeaturedServices>
                 <WhyWe></WhyWe>
+                <Subscribe></Subscribe>
             </div>
         </div>
     );

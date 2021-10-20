@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
+import Subscribe from '../../Shared/Subscribe/Subscribe';
 import './Contact.css'
 
 const Contact = () => {
@@ -39,6 +40,7 @@ const Contact = () => {
                 </Button>
                 </Form>
                 </div>
+                <Subscribe></Subscribe>
            </div>
         </div>
     );

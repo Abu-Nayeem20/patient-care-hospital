@@ -41,23 +41,14 @@ const SignIn = () => {
                 <div className='col-md-6'>
                 <Form className='signin-form bg-primary p-5 rounded'>
                     <p className='text-danger'>{error}</p>
-                {haveAccount ? 
                 <div>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" onBlur={handleEmailChange} placeholder="Enter email" required />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" onBlur={handlePasswordChange} placeholder="Password" required />
-            </Form.Group> 
-                </div>:
-                <div>
-                    <Form.Group className="mb-3" controlId="">
+                    { !haveAccount &&
+                        <Form.Group className="mb-3" controlId="">
                     <Form.Label>Name</Form.Label>
                     <Form.Control type="text" onBlur={handleNameChange} placeholder="Enter Name" />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                }
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
                     <Form.Control type="email" onBlur={handleEmailChange} placeholder="Enter email" required />
                 </Form.Group>
@@ -66,12 +57,15 @@ const SignIn = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" onBlur={handlePasswordChange} placeholder="Password" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="">
+                  
+                {!haveAccount &&
+                    <Form.Group className="mb-3" controlId="">
                     <Form.Label>Profile Photo</Form.Label>
                     <Form.Control type="text" onBlur={handlePhotoChange} placeholder="Profile Photo url" />
                 </Form.Group>
-                </div>
                 }
+                </div>
+                
                 
                 <Button variant="danger" onClick={handleSubmitButton} type="submit">
                     {haveAccount ? 'Sign In' : 'Register'}
@@ -93,3 +87,38 @@ const SignIn = () => {
 };
 
 export default SignIn;
+
+
+
+
+// {haveAccount ? 
+//     <div>
+//         <Form.Group className="mb-3" controlId="formBasicEmail">
+//     <Form.Label>Email</Form.Label>
+//     <Form.Control type="email" onBlur={handleEmailChange} placeholder="Enter email" required />
+//     </Form.Group>
+//     <Form.Group className="mb-3" controlId="formBasicPassword">
+//     <Form.Label>Password</Form.Label>
+//     <Form.Control type="password" onBlur={handlePasswordChange} placeholder="Password" required />
+// </Form.Group> 
+//     </div>:
+//     <div>
+//         <Form.Group className="mb-3" controlId="">
+//         <Form.Label>Name</Form.Label>
+//         <Form.Control type="text" onBlur={handleNameChange} placeholder="Enter Name" />
+//     </Form.Group>
+//     <Form.Group className="mb-3" controlId="formBasicEmail">
+//         <Form.Label>Email</Form.Label>
+//         <Form.Control type="email" onBlur={handleEmailChange} placeholder="Enter email" required />
+//     </Form.Group>
+
+//     <Form.Group className="mb-3" controlId="formBasicPassword">
+//         <Form.Label>Password</Form.Label>
+//         <Form.Control type="password" onBlur={handlePasswordChange} placeholder="Password" required />
+//     </Form.Group>
+//     <Form.Group className="mb-3" controlId="">
+//         <Form.Label>Profile Photo</Form.Label>
+//         <Form.Control type="text" onBlur={handlePhotoChange} placeholder="Profile Photo url" />
+//     </Form.Group>
+//     </div>
+//     }

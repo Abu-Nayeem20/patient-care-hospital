@@ -1,0 +1,10 @@
+
+.featured-item{
+   background-color:#1e3799;
+}
+.featured-item img{
+    transition: .6s;
+}
+.featured-item:hover img{
+    transform: scale(1.3);
+}

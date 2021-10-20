@@ -10,17 +10,17 @@ const FeaturedServices = () => {
         .then(data => setServices(data))
     }, [])
 
-    // const slicedService = services.slice(0, 3);
+    const slicedService = services.slice(0, 6);
 
     return (
         <div>
-            <div className='text-center py-5'>
-            <h2 className='fw-bold text-dark fs-1'>FEATURED SERVICES</h2>
-            <p>These are our Special Services</p>
+            <div className='py-5 section-heading'>
+            <h2>FEATURED SERVICES</h2>
+            <p>Personalized patient care is what sets Medicus Medical Center apart.</p>
             </div>
             <div className="row row-cols-1 row-cols-md-3 g-4">
             {
-                services.map(service => <FeaturedService 
+                slicedService.map(service => <FeaturedService 
                     key={service.id}
                     service={service}></FeaturedService>)
             }

@@ -1,15 +1,16 @@
 import React from 'react';
+import './Welcome.css'
 
 const Welcome = () => {
     return (
         <div className='py-5'>
-            <div className='py-5 text-center'>
-            <h2 className='fs-1 fw-bold text-dark'>WELCOME TO PATIENT CARE</h2>
+            <div className='pb-5 section-heading'>
+            <h2>WELCOME TO PATIENT CARE</h2>
             <p>We' ve built a long standing relationship based on trust</p>
             </div>
             <div className="card">
-            <div className="row g-0">
-                <div className="col-md-4">
+            <div className="row g-0 welcome-content">
+                <div className="col-md-4 overflow-hidden">
                 <img src="https://i.ibb.co/SrzybVP/banner-1.jpg" className="img-fluid rounded-start" alt="..."/>
                 </div>
                 <div className="col-md-8">

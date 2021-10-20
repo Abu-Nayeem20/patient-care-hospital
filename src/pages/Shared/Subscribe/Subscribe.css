@@ -1,0 +1,46 @@
+
+.subscribe-content{
+    background-image: url('https://i.ibb.co/hdkZ6Ky/sub-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+    margin: 100px 0 0;
+    /* width: 100vw; */
+    height: 85vh;
+    position: relative;
+}
+.subscribe-inner-content{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+.subscribe-inner-content h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: brown;
+    padding: 10px 0;
+}
+.subscribe-inner-content h2 span{
+    color: #1e3799;
+}
+.subscribe-inner-content p{
+    color: #1e3799;
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    
+    .subscribe-inner-content{
+        width: 100%;
+    }
+    .subscribe-inner-content h2{
+        font-size: 30px;
+        padding: 0;
+    }
+    .subscribe-inner-content p{
+        font-size: 16px;
+    }
+}
